@@ -1,11 +1,23 @@
+import { BrowserRouter, createBrowserRouter } from "react-router-dom";
+import Nav from "./components/nav";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+
 const App = () => {
-  return (
-    <div>
-      <h1 className="bg-amber-400 text-black">My App</h1>
-      <button type="button" onClick={""}>
-        Click me!
-      </button>
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <>
+          <Nav />
+          <Home />
+          <About />
+          <Contact />
+        </>
+      ),
+    },
+  ]);
+  return <BrowserRouter></BrowserRouter>;
 };
 export default App;
