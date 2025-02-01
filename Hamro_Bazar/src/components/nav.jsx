@@ -21,8 +21,8 @@ const Navbar = () => {
     <>
       <nav className="text-xl bg-[#F4FFC3] text-[#f7ad0d] flex justify-between items-center px-6 py-4 lg:px-[10rem]">
         {/* Logo */}
-        <a href="" className="font-bold text-3xl mr-15 ">
-          HamroBazzar
+        <a href="" className="font-bold text-3xl mr-18 ">
+          Bhat#Bhateni
         </a>
 
         {/* Hamburger Menu for Mobile */}
@@ -40,7 +40,7 @@ const Navbar = () => {
           {[
             { name: "Home", path: "/" },
             { name: "About", path: "/about" },
-            { name: "Service", path: "/service" },
+            { name: "Contact", path: "/contact" },
           ].map((link) => (
             <NavLink
               key={link.path}
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="flex items-center bg-white h-9 rounded-md px-4 mt-2 lg:mt-0">
             <input
               type="text"
-              placeholder="search...."
+              placeholder="search here .."
               className="outline-none"
             />
             <CgSearch className="text-2xl cursor-pointer ml-2" title="Search" />
@@ -70,18 +70,19 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-6 items-center">
           <IoIosAddCircleOutline
             onClick={() => setAddProductOpen(true)}
-            className="text-4xl cursor-pointer hover:scale-125 transition-transform duration-200"
+            className="text-4xl cursor-pointer hover:scale-125 transition-transform duration-200 ml-5"
             title="Add Product"
+          />
+          <IoCart
+            className="text-4xl cursor-pointer hover:scale-110 transition-transform duration-200"
+            title="Cart"
           />
           <FaRegUserCircle
             onClick={() => setLoginOpen(true)}
             className="text-4xl cursor-pointer hover:scale-110 transition-transform duration-200"
             title="Login"
           />
-          <IoCart
-            className="text-4xl cursor-pointer hover:scale-110 transition-transform duration-200"
-            title="Cart"
-          />
+          
         </div>
       </nav>
 

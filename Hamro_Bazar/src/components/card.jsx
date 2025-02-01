@@ -39,10 +39,10 @@ const Card = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 m-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8  ">
         {data.map((item) => (
           <div
-            className="bg-[#fad337] p-1  rounded-lg w-full md:w-[20rem] lg:w-[18rem] xl:w-[20rem] m-5 h-auto  hover:drop-shadow-xl"
+            className="bg-[#fad337] p-1  rounded-lg w-full md:w-[18rem] lg:w-[18rem] xl:w-[18rem]  h-auto  hover:drop-shadow-xl"
             key={item.id}
           >
             <img
