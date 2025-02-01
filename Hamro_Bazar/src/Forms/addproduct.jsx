@@ -77,7 +77,7 @@ const AddProductForm = () => {
     >
       {({ errors }) => (
         <Form>
-          <div className="p-4">
+          <div className="p-4 font-serif">
             <div>
               <label className="text-md font-semibold text-black">Title</label>
               <Field

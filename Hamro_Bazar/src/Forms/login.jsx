@@ -5,19 +5,15 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import clsx from "clsx";
 
 const addProductFormSchema = object({
-  title: string({
-    required_error: "*Please enter a title",
+  name: string({
+    required_error: "*Please enter a Full Name",
   }),
-  price: string({
-    required_error: "*Please enter a price",
+  email: string({
+    required_error: "*Please enter Email",
   }),
-  description: string({
-    required_error: "*Please enter a description",
+  address: string({
+    required_error: "*Please enter address",
   }),
-  image: string({
-    required_error: "*Image is required",
-  }),
-  category: z.string().min(3, "*Category must be at least 3 characters long"),
 });
 
 const addProduct = async (product) => {
@@ -42,32 +38,28 @@ const LoginForm = () => {
   const mutation = useMutation({
     mutationFn: addProduct,
     onSuccess: (data) => {
-      console.log("Product added successfully:", data);
-      alert("Product added successfully");
+      console.log("User details successfully:", data);
+      alert("User details added successfully");
       client.invalidateQueries(["getProducts"]);
     },
     onError: (error) => {
-      console.error("Error adding product:", error);
-      alert("Failed to add product");
+      console.error("Error adding User details:", error);
+      alert("Failed to add User details");
     },
   });
 
   return (
     <Formik
       initialValues={{
-        title: "",
-        price: "",
-        description: "",
-        image: "",
-        category: "",
+        name: "",
+        address: "",
+        email: "",
       }}
       onSubmit={async (values, { resetForm }) => {
         await mutation.mutateAsync({
-          title: values.title,
-          price: Number(values.price),
-          description: values.description,
-          image: values.image,
-          category: values.category,
+          name: values.name,
+          address: values.address,
+          email: z.string().email("Invalid email address"),
         });
         resetForm();
       }}
@@ -75,73 +67,45 @@ const LoginForm = () => {
     >
       {({ errors }) => (
         <Form>
-          <div className="p-4">
+          <div className="p-4 font-serif">
             <div>
-              <label className="text-md font-semibold text-black">Title</label>
+              <label className="text-md font-semibold text-black">Name</label>
               <Field
                 type="text"
-                name="title"
-                placeholder="Enter title"
+                name="name"
+                placeholder="Enter Full Name"
                 className="rounded-lg w-full border border-gray-300 p-2"
               />
-              {!!errors.title && (
-                <div className="text-red-500 pt-2">{errors.title}</div>
+              {!!errors.name && (
+                <div className="text-red-500 pt-2">{errors.name}</div>
               )}
             </div>
 
             <div className="mt-4">
-              <label className="text-md font-semibold text-black">Price</label>
+              <label className="text-md font-semibold text-black">email</label>
               <Field
                 type="text"
-                name="price"
-                placeholder="Enter price"
+                name="email"
+                placeholder="Enter Email"
                 className="rounded-lg w-full border border-gray-300 p-2"
               />
-              {!!errors.price && (
-                <div className="text-red-500 pt-2">{errors.price}</div>
+              {!!errors.email && (
+                <div className="text-red-500 pt-2">{errors.email}</div>
               )}
             </div>
 
             <div className="mt-4">
               <label className="text-md font-semibold text-black">
-                Description
+                Address
               </label>
               <Field
                 type="text"
-                name="description"
-                placeholder="Enter description"
+                name="address"
+                placeholder="Enter address"
                 className="rounded-lg w-full border border-gray-300 p-2"
               />
               {!!errors.description && (
-                <div className="text-red-500 pt-2">{errors.description}</div>
-              )}
-            </div>
-
-            <div className="mt-4">
-              <label className="text-md font-semibold text-black">Image</label>
-              <Field
-                type="text"
-                name="image"
-                placeholder="Enter image"
-                className="rounded-lg w-full border border-gray-300 p-2"
-              />
-              {!!errors.image && (
-                <div className="text-red-500 pt-2">{errors.image}</div>
-              )}
-            </div>
-
-            <div className="mt-4">
-              <label className="text-md font-semibold text-black">
-                Category
-              </label>
-              <Field
-                type="text"
-                name="category"
-                placeholder="Enter category"
-                className="rounded-lg w-full border border-gray-300 p-2"
-              />
-              {!!errors.category && (
-                <div className="text-red-500 pt-2">{errors.category}</div>
+                <div className="text-red-500 pt-2">{errors.address}</div>
               )}
             </div>
 

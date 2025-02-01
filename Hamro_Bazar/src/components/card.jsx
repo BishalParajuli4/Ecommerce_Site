@@ -19,7 +19,7 @@ const Card = () => {
   // Check if loading
   if (isLoading) {
     return (
-      <div className="flex justify-center items-center h-[100vh]">
+      <div className="flex justify-center items-center h-[100vh] font-serif">
         Loading...
       </div>
     );
@@ -28,7 +28,7 @@ const Card = () => {
   // Check if error
   if (isError) {
     console.log("Error while fetching data");
-    return <div>Error fetching data</div>;
+    return <div className="font-serif">Error fetching data</div>;
   }
 
   // Check if data is undefined or null
@@ -52,9 +52,10 @@ const Card = () => {
             />
 
             <div className="p-3">
-              <h1 className="font-bold line-clamp-1  ">{item.title}</h1>
-              <h4 className="font-bold text-red-950">Rs.{item.price}</h4>
-              <div className="flex justify-center p-4 ">
+              <h1 className="font-bold line-clamp-1  font-serif">{item.title}</h1>
+              <h4 className="font-bold text-red-950 font-serif" >Rs.{item.price}</h4>
+        
+              <div className="flex justify-center p-4 font-serif">
                 <button className=" text-xl   font-bold border border-[#edd457] bg-[#f7ad0d] rounded-lg text-[#F4FFC3] w-[8rem] hover:bg-[#F4FFC3] hover:text-[#ffdc91] ">
                   Buy Now
                 </button>

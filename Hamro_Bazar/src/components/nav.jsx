@@ -21,13 +21,13 @@ const Navbar = () => {
     <>
       <nav className="text-xl bg-[#F4FFC3] text-[#f7ad0d] flex justify-between items-center px-6 py-4 lg:px-[10rem]">
         {/* Logo */}
-        <a href="" className="font-bold text-3xl mr-18 ">
+        <a href="" className="font-bold text-3xl mr-18 font-serif ">
           Bhat#Bhateni
         </a>
 
         {/* Hamburger Menu for Mobile */}
         <IoMdMenu
-          className="text-3xl cursor-pointer lg:hidden"
+          className="text-3xl cursor-pointer lg:hidden font-serif"
           onClick={() => setMenuOpen(!isMenuOpen)}
         />
 
@@ -35,7 +35,7 @@ const Navbar = () => {
         <div
           className={`absolute lg:static top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent flex-col lg:flex-row lg:flex ${
             isMenuOpen ? "flex" : "hidden"
-          } lg:space-x-8 font-bold p-4 lg:p-0 shadow-lg lg:shadow-none`}
+          } lg:space-x-8 font-bold p-4 lg:p-0 shadow-lg lg:shadow-none font-serif`}
         >
           {[
             { name: "Home", path: "/" },
@@ -56,13 +56,13 @@ const Navbar = () => {
           ))}
 
           {/* Search Bar */}
-          <div className="flex items-center bg-white h-9 rounded-md px-4 mt-2 lg:mt-0">
+          <div className="flex items-center bg-white h-9 rounded-md px-4 mt-2 lg:mt-0 font-serif">
             <input
               type="text"
               placeholder="search here .."
               className="outline-none"
             />
-            <CgSearch className="text-2xl cursor-pointer ml-2" title="Search" />
+            <CgSearch className="text-2xl cursor-pointer ml-2 font-serif" title="Search" />
           </div>
         </div>
 
