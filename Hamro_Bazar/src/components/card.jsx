@@ -42,7 +42,7 @@ const Card = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 m-8 ">
         {data.map((item) => (
           <div
-            className="bg-[#A9C46C] p-1  rounded-lg w-full md:w-[20rem] lg:w-[18rem] xl:w-[20rem] m-5 h-auto  hover:drop-shadow-xl"
+            className="bg-[#fad337] p-1  rounded-lg w-full md:w-[20rem] lg:w-[18rem] xl:w-[20rem] m-5 h-auto  hover:drop-shadow-xl"
             key={item.id}
           >
             <img
@@ -55,7 +55,7 @@ const Card = () => {
               <h1 className="font-bold line-clamp-1  ">{item.title}</h1>
               <h4 className="font-bold text-red-950">Rs.{item.price}</h4>
               <div className="flex justify-center p-4 ">
-                <button className=" text-xl   font-bold border border-[#A9C46C] bg-[#5D8736] rounded-lg text-[#F4FFC3] w-[8rem] hover:bg-[#F4FFC3] hover:text-[#A9C46C] ">
+                <button className=" text-xl   font-bold border border-[#edd457] bg-[#f7ad0d] rounded-lg text-[#F4FFC3] w-[8rem] hover:bg-[#F4FFC3] hover:text-[#ffdc91] ">
                   Buy Now
                 </button>
               </div>

@@ -152,7 +152,7 @@ const AddProductForm = () => {
                 type="submit"
                 // className="bg-red-500 px-4 py-2 rounded-md text-white"
                 className={clsx(
-                  "bg-[#5D8736] px-4 py-2 rounded-md text-white",
+                  "bg-[#f7ad0d] px-4 py-2 rounded-md text-white",
                   mutation.isPending ? "opacity-50" : null
                 )}
                 disabled={mutation.isPending}

@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="text-xl bg-[#F4FFC3] text-[#5D8736] flex justify-between items-center px-6 py-4 lg:px-[10rem]">
+      <nav className="text-xl bg-[#F4FFC3] text-[#f7ad0d] flex justify-between items-center px-6 py-4 lg:px-[10rem]">
         {/* Logo */}
         <a href="" className="font-bold text-3xl mr-15 ">
           HamroBazzar
@@ -47,7 +47,7 @@ const Navbar = () => {
               to={link.path}
               className={({ isActive }) =>
                 `block p-2 lg:p-0 ${
-                  isActive ? "text-[#809D3C]" : "text-[#5D8736]"
+                  isActive ? "text-[#f7ad0d]" : "text-[#f79013]"
                 }`
               }
             >
@@ -92,7 +92,7 @@ const Navbar = () => {
             <div className="flex justify-end">
               <IoMdCloseCircleOutline
                 onClick={() => setAddProductOpen(false)}
-                className="text-[#5D8736] text-xl cursor-pointer hover:scale-125 transition-transform duration-200"
+                className="text-[#f7ad0d] text-xl cursor-pointer hover:scale-125 transition-transform duration-200"
               />
             </div>
             <AddProductForm />
@@ -106,7 +106,7 @@ const Navbar = () => {
             <div className="flex justify-end">
               <IoMdCloseCircleOutline
                 onClick={() => setLoginOpen(false)}
-                className="text-[#5D8736] text-xl cursor-pointer hover:scale-110 transition-transform duration-200"
+                className="text-[#f7ad0d] text-xl cursor-pointer hover:scale-110 transition-transform duration-200"
               />
             </div>
             <LoginForm />

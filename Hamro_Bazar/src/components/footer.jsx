@@ -1,4 +1,4 @@
-import { FaFacebookF, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
             Typesetting, remaining essentially unchanged. It was popularised in
             the 1960s with the like Aldus PageMaker including of Lorem Ipsum.
           </p>
-          <button className="mt-4 border border-[#F4FFC3] text-[#F4FFC3] px-4 py-2 rounded-lg hover:bg-[#A9C46C] hover:text-gray-900">
+          <button className="mt-4 border border-[#F4FFC3] text-[#F4FFC3] px-4 py-2 rounded-lg hover:bg-[#ffdc91] hover:text-gray-900">
             Read More
           </button>
         </div>
@@ -32,8 +32,8 @@ const Footer = () => {
 
           <div>
             <h3 className="text-white font-semibold mb-3">Contact</h3>
-            <p>Address: Butwal-3,Goalpark </p>
-            <p>Email: officialsuzan@gmail.com</p>
+            <p>Address: Butwal-12,Nayagaun </p>
+            <p>Email: bishalsharma2004@gmail.com</p>
           </div>
         </div>
       </div>
@@ -41,18 +41,26 @@ const Footer = () => {
       {/* Social Icons */}
       <div className="flex space-x-4 mt-4 lg:mt-0 ml-[25rem]">
         <span className="w-10 h-10 flex items-center justify-center border border-white rounded-full ">
-          <a href="https://www.facebook.com/sujanpokharell" target="_blank">
+          <a
+            href="https://www.facebook.com/bishal.parajuli.3388"
+            target="_blank"
+          >
             <FaFacebookF className="text-2xl" />
           </a>
         </span>
         <span className="w-10 h-10 flex items-center justify-center border border-white rounded-full">
-          <a href="https://www.instagram.com/itssuzan07/" target="_blank">
+          <a href="https://www.instagram.com/bishalparajuli14/" target="_blank">
             <FaInstagram className="text-2xl" />
           </a>
         </span>
         <span className="w-10 h-10 flex items-center justify-center border border-white rounded-full">
-          <a href="https://github.com/SUJANPOKHAREL07" target="_blank">
+          <a href="https://github.com/BishalParajuli4" target="_blank">
             <FaGithub className="text-2xl" />
+          </a>
+        </span>
+        <span className="w-10 h-10 flex items-center justify-center border border-white rounded-full">
+          <a href="https://www.linkedin.com/BishalParajuli14" target="_blank">
+            <FaLinkedinIn className="text-2xl" />
           </a>
         </span>
       </div>
