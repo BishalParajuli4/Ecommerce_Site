@@ -21,7 +21,7 @@ const Navbar = () => {
     <>
       <nav className="text-xl bg-[#F4FFC3] text-[#f7ad0d] flex justify-between items-center px-6 py-4 lg:px-[10rem]">
         {/* Logo */}
-        <a href="" className="font-bold text-3xl mr-18 font-serif ">
+        <a href="" className="font-bold text-3xl mr-18 font-serif underline">
           Bhat#Bhateni
         </a>
 

@@ -7,11 +7,11 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-10">
+    <footer className="bg-gray-800 text-gray-300 py-10 font-serif">
       <div className="container mx-auto my-auto px-6 lg:px-16 flex flex-col justify-around lg:flex-row  items-start lg:items-stretch ">
         {/* Left Section */}
         <div className="mb-6 mr-15 lg:mb-0">
-          <h2 className="text-[#FFF]  text-2xl font-bold">Bhat#Bhateni</h2>
+          <h2 className="text-[#FFF]  text-2xl font-bold underline">Bhat#Bhateni</h2>
 
           <p className="mt-4 max-w-md">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
@@ -27,7 +27,7 @@ const Footer = () => {
         {/* Center Section */}
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-white font-semibold mb-3 mr-15">Shop Info</h3>
+            <h3 className="text-white font-semibold mb-3 mr-15 underline">Shop Info</h3>
             <ul className="space-y-2">
               <li>About Us</li>
               <li>Contact Us</li>
@@ -38,12 +38,12 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-3 mr-15 ">Contact</h3>
+            <h3 className="text-white font-semibold mb-3 mr-15 underline">Contact</h3>
             <p>Address: Butwal-12,Nayagaun </p>
             <p>Email: bishalsharma2004@gmail.com</p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-3 ">Partners</h3>
+            <h3 className="text-white font-semibold mb-3 underline ">Partners</h3>
             <p>Daraz</p>
             <p>Amazon</p>
             <p>FlipKart</p>
