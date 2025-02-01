@@ -8,11 +8,11 @@ const slides = ["p1.jpg", "p2.jpg", "p1.jpg", "p2.jpg"];
 const Home = () => {
   return (
     <>
-      <div className=" bg-[#F4FFC3]">
-        <div className=" w-200 h-full flex justify-center px-4 bg-[#F4FFC3] mb-5 sm:p-0 m-auto  ">
+      <div className=" bg-gray-400 ">
+        <div className=" lg:w-200  w:auto h-full flex justify-center px-4 bg-[#F4FFC3] mb-5 sm:p-0 m-auto  ">
           <Carousel slides={slides} />
         </div>
-        <div className="bg-[#DDDDDD] md:mx-100 flex justify-center rounded-4xl sm:mx-30">
+        <div className="bg-[#DDDDDD] lg:mx-100 flex justify-center rounded-4xl sm:mx-30 ">
         <marquee direction="left" >
           <h1 className="text-3xl font-bold text-[#C76D87] flex justify-center m-7 font-serif"> Buy As Much As You Want </h1>
         </marquee>

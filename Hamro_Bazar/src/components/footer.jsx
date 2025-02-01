@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-gray-300 py-10 font-serif">
       <div className="container mx-auto my-auto px-6 lg:px-16 flex flex-col justify-around lg:flex-row  items-start lg:items-stretch ">
-        {/* Left Section */}
+        
         <div className="mb-6 mr-15 lg:mb-0">
           <h2 className="text-[#FFF]  text-2xl font-bold underline">Bhat#Bhateni</h2>
 
@@ -24,7 +24,7 @@ const Footer = () => {
           </button>
         </div>
 
-        {/* Center Section */}
+        
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
             <h3 className="text-white font-semibold mb-3 mr-15 underline">Shop Info</h3>
@@ -37,7 +37,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="">
             <h3 className="text-white font-semibold mb-3 mr-15 underline">Contact</h3>
             <p>Address: Butwal-12,Nayagaun </p>
             <p>Email: bishalsharma2004@gmail.com</p>

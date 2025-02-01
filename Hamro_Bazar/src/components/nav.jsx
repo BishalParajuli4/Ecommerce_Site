@@ -19,24 +19,34 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="text-xl bg-[#F4FFC3] text-[#f7ad0d] flex justify-between items-center px-6 py-4 lg:px-[10rem]">
-        {/* Logo */}
+      <nav className="text-xl bg-gray-500 text-[#f7ad0d] flex justify-between items-center px-8 py-4 lg:px-[10rem] ">
+       
         <a href="" className="font-bold text-3xl mr-18 font-serif underline">
           Bhat#Bhateni
         </a>
 
-        {/* Hamburger Menu for Mobile */}
+       
         <IoMdMenu
-          className="text-3xl cursor-pointer lg:hidden font-serif"
+          className="text-3xl cursor-pointer lg:hidden font-serif "
           onClick={() => setMenuOpen(!isMenuOpen)}
         />
 
-        {/* Nav Links (Desktop & Mobile) */}
+        
         <div
           className={`absolute lg:static top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent flex-col lg:flex-row lg:flex ${
             isMenuOpen ? "flex" : "hidden"
           } lg:space-x-8 font-bold p-4 lg:p-0 shadow-lg lg:shadow-none font-serif`}
         >
+           
+           <div className="flex items-center bg-gray-100 h-9 rounded-md px-4 mt-2 lg:mt-0 font-serif">
+            <input
+              type="text"
+              placeholder="search here .."
+              className="outline-none"
+            />
+            <CgSearch className="text-2xl cursor-pointer ml-2 font-serif" title="Search" />
+          </div>
+          
           {[
             { name: "Home", path: "/" },
             { name: "About", path: "/about" },
@@ -55,18 +65,9 @@ const Navbar = () => {
             </NavLink>
           ))}
 
-          {/* Search Bar */}
-          <div className="flex items-center bg-white h-9 rounded-md px-4 mt-2 lg:mt-0 font-serif">
-            <input
-              type="text"
-              placeholder="search here .."
-              className="outline-none"
-            />
-            <CgSearch className="text-2xl cursor-pointer ml-2 font-serif" title="Search" />
-          </div>
         </div>
 
-        {/* Icons */}
+        
         <div className="hidden lg:flex space-x-6 items-center">
           <IoIosAddCircleOutline
             onClick={() => setAddProductOpen(true)}
@@ -86,7 +87,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Modals */}
+      
       {isAddProductOpen && (
         <Modal>
           <div className="bg-white w-2/6 rounded-md p-4">

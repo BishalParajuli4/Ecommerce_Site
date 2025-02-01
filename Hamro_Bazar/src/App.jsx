@@ -4,6 +4,7 @@ import About from "./pages/about";
 import Navbar from "./components/nav";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
+import Footer from "./components/footer";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <About />
+        <Footer />
       </>
     ),
   },
@@ -30,6 +32,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <Contact />
+        <Footer />
       </>
     ),
   },
