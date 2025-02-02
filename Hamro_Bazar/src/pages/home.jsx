@@ -4,7 +4,7 @@ import Carousel from "../components/carousel";
 
 import Footer from "../components/footer";
 
-const slides = ["p1.jpg", "p2.jpg", "p1.jpg", "p2.jpg"];
+const slides = ["p1.jpg", "p2.jpg", "p3.jpg", "p4.jpg", "p5.jpg"];
 const Home = () => {
   return (
     <>
