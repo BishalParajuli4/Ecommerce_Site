@@ -22,7 +22,8 @@ const Contact = () => {
     setSubmitting(false);
   };
   return (
-    <div className="bg-yellow-300 flex justify-center mx-105 py-30 my-10 rounded-4xl font-serif">
+    <div className="bg-gray-400 sm:p-50 p-20">
+    <div className="bg-[#f7ad0d] flex justify-center py-30  rounded-4xl font-serif ">
     <Formik
       initialValues={initialValues}
       validationSchema={toFormikValidationSchema(validationSchema)}
@@ -81,6 +82,7 @@ const Contact = () => {
         </Form>
       )}
     </Formik>
+    </div>
     </div>
   );
 };

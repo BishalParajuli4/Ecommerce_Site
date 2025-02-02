@@ -39,7 +39,7 @@ const Card = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8  ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 m-5 sm:m-5 lg:m-5 md:m-5">
         {data.map((item) => (
           <div
             className="bg-[#fad337] p-1  rounded-lg w-full md:w-[18rem] lg:w-[18rem] xl:w-[18rem]  h-auto  hover:drop-shadow-xl"
@@ -52,9 +52,13 @@ const Card = () => {
             />
 
             <div className="p-3">
-              <h1 className="font-bold line-clamp-1  font-serif">{item.title}</h1>
-              <h4 className="font-bold text-red-950 font-serif" >Rs.{item.price}</h4>
-        
+              <h1 className="font-bold line-clamp-1  font-serif">
+                {item.title}
+              </h1>
+              <h4 className="font-bold text-red-950 font-serif">
+                Rs.{item.price}
+              </h4>
+
               <div className="flex justify-center p-4 font-serif">
                 <button className=" text-xl   font-bold border border-[#edd457] bg-[#f7ad0d] rounded-lg text-[#F4FFC3] w-[8rem] hover:bg-[#F4FFC3] hover:text-[#ffdc91] ">
                   Buy Now
