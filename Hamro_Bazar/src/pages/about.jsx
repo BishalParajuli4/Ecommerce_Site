@@ -38,6 +38,20 @@ const About = () => {
         voluptates asperiores sed quae, quod, ut voluptatibus ipsa perferendis
         distinctio.
       </p>
+      <br />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam eum
+        tenetur animi qui quis corporis. Nulla esse sunt adipisci quas
+        voluptates asperiores sed quae, quod, ut voluptatibus ipsa perferendis
+        distinctio.
+      </p>
+      <br />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam eum
+        tenetur animi qui quis corporis. Nulla esse sunt adipisci quas
+        voluptates asperiores sed quae, quod, ut voluptatibus ipsa perferendis
+        distinctio.
+      </p>
     </div>
   );
 };
